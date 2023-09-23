@@ -1,0 +1,34 @@
+Dados númericos: INT, TINYINT, BIGINT, FLOAT, REAL, etc.
+
+Dados de data e hora: DATA, TIME, DATETIME, etc.
+
+Dados character e string: CHAR, VARCHAR, TEXT, etc.
+
+Dados de sequência de caracteres unicode: NCHAR, NVARCHAR, NTEXT, etc.
+
+Dados binários: BINARY, VARBINARY, etc.
+
+Dados diversos: CLOB, BLOB, XML, CURSOR, TABLE, etc.
+
+
+--> GRUPOS DE COMANDOS EM SQL <--
+
+- DDL (DATA DEFINITION LANGUAGE)
+> Create = criar objetos
+> Alter = alterar objetos
+> Drop = deletar objetos
+
+- DCL (DATA CONTROL LANGUAGE)
+> Grant = conceder permissão
+> Remove = para remover permmissão
+> Deny = para negar uma permissão
+
+- DML (DATA MANIPULATION LANGUAGE)
+> Select = pesquisar informações
+> Insert = inserir informações
+> Update = atualizar informações
+> Delete = deletar informações
+
+- Outros
+> From = especificar a fonte dos Dados
+> Where = filtrar os dados de um determinado comando
