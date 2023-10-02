@@ -47,7 +47,7 @@
             width: 400px;
             height: 80vh;
         }  
-        #cad-vagas {
+        #cadastro-form {
             width: 400px;
             height: 680px;
             background-color: #534c36;
@@ -83,7 +83,7 @@
             width: 80%;
             height: 35px;
         }
-        #contato {
+        #consultar {
             padding-top: 150px;
             width: 400px;
             height: 100vh;
@@ -134,32 +134,42 @@
             background-color: #ff5656;
             border: 2px solid #000000;
         }
+        #vagas-list {
+            font-size: 17px;
+            font-weight: bold;
+            color: #fdfdfd;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 95%;
+            margin: 5px auto;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <li><a href="#cadastro">Cadastro</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#consultar">Consultar</a></li>
         </nav>
     </header>
     <section id="cadastro">
-        <form id="cad-vagas">
+        <form id="cadastro-form">
             <h1>Cadastramento de Vagas</h1>
             <label>Placa</label>
-            <input type="text" placeholder="&nbsp Ex: ABC-123" maxlength="6" required><br>
+            <input type="text" id="placa" placeholder="&nbsp Ex: ABC-123" maxlength="6" required><br>
             <label>Proprietário</label>
-            <input type="text" placeholder="&nbsp Ex: João" required><br>
+            <input type="text" id="proprietario" placeholder="&nbsp Ex: João" required><br>
             <label>Apartamento</label>
-            <input type="number" placeholder="&nbsp Ex: 123" required><br>
+            <input type="number" id="apartamento" placeholder="&nbsp Ex: 123" required><br>
             <label>Bloco</label>
-            <input type="text" placeholder="&nbsp Ex: A" maxlength="1" required><br>
+            <input type="text" id="bloco" placeholder="&nbsp Ex: A" maxlength="1" required><br>
             <label>Modelo</label>
-            <input type="text" placeholder="&nbsp Ex: BMW" required><br>
+            <input type="text" id="modelo" placeholder="&nbsp Ex: BMW" required><br>
             <label>Cor</label>
-            <input type="text" placeholder="&nbsp Ex: Preto" required><br>
+            <input type="text" id="cor" placeholder="&nbsp Ex: Preto" required><br>
             <label>Quantidade de vagas</label>
-            <input type="number" placeholder="&nbsp Ex: 1" required><br>
+            <input type="number" id="qntVagas" placeholder="&nbsp Ex: 1" required><br>
             <div class="buttons">
                 <button class="send" type="submit">Enviar</button>
                 <button class="cancel" type="reset">Cancelar</button>
@@ -169,10 +179,10 @@
 
     <div class="divider"></div>
     
-    <section id="contato">
+    <section id="consultar">
         <form id="cons-vagas">
             <h1>Consulta de Vagas</h1>
-            
+            <ul id="vagas-list"></ul>
         </form>
     </section>
 
