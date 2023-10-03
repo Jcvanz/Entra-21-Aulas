@@ -10,6 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             display: flex;
             flex-direction: column;
@@ -17,13 +18,15 @@
             justify-content: center;
             text-align: center;
             background-color: #d6d6d6;
-        } 
+        }
+
         header {
             width: 100%;
             height: 50px;
             background-color: #0000005d;
             border-bottom: 1px solid #000;
         }
+
         nav {
             display: flex;
             align-items: center;
@@ -31,22 +34,26 @@
             gap: 100px;
             width: 100%;
         }
+
         li {
             display: flex;
             align-items: center;
             justify-content: center;
             height: 50px;
         }
+
         a {
             text-decoration: none;
             color: #000000;
             font-weight: bold;
         }
+
         #cadastro {
             margin-top: 40px;
             width: 400px;
             height: 80vh;
-        }  
+        }
+
         #cadastro-form {
             width: 400px;
             height: 680px;
@@ -59,6 +66,7 @@
             border: 1px solid #000000;
             filter: drop-shadow(1px 1px 5px #000000);
         }
+
         h1 {
             text-align: center;
             margin-bottom: 15px;
@@ -68,6 +76,7 @@
             color: #000000;
             filter: drop-shadow(1px 1px 1px #00e1ff);
         }
+
         label {
             margin-left: 40px;
             font-weight: 500;
@@ -76,21 +85,24 @@
             color: #000000;
             filter: drop-shadow(1px 1px 1px #00e1ff);
         }
+
         input {
             margin-left: 40px;
             border-radius: 5px;
-            border: 1px solid #333;
+            border: none;
             width: 80%;
             height: 35px;
         }
+
         #consultar {
             padding-top: 150px;
-            width: 400px;
+            width: 100%;
             height: 100vh;
         }
+
         #cons-vagas {
-            width: 400px;
-            height: 600px;
+            width: 900px;
+            height: auto;
             background-color: #534c36;
             text-align: start;
             display: flex;
@@ -98,6 +110,7 @@
             border-radius: 15px;
             border: 1px solid #000000;
             filter: drop-shadow(1px 1px 5px #000000);
+            margin: 0 auto;
         }
         h1 {
             text-align: center;
@@ -108,10 +121,12 @@
             color: #000000;
             filter: drop-shadow(1px 1px 1px #00e1ff);
         }
+
         .divider {
             width: 100%;
             border-top: 2px solid #534c36;
         }
+
         .buttons {
             width: 100%;
             height: 50px;
@@ -119,7 +134,9 @@
             align-items: center;
             justify-content: space-evenly;
         }
-        .send, .cancel {
+
+        .send,
+        .cancel {
             width: 120px;
             height: 40px;
             border-radius: 10px;
@@ -127,13 +144,16 @@
             font-weight: bold;
             cursor: pointer;
         }
+
         .send {
             border: 2px solid #020202;
         }
+
         .cancel {
             background-color: #ff5656;
             border: 2px solid #000000;
         }
+
         #vagas-list {
             font-size: 17px;
             font-weight: bold;
@@ -143,6 +163,15 @@
             gap: 30px;
             width: 95%;
             margin: 5px auto;
+        }
+
+        @media (max-width: 1000px) {
+            #cons-vagas {
+                width: auto;
+            }
+        }
+        input::after {
+            border: 3px solid #003bfd;
         }
     </style>
 </head>
@@ -178,7 +207,7 @@
     </section>
 
     <div class="divider"></div>
-    
+
     <section id="consultar">
         <form id="cons-vagas">
             <h1>Consulta de Vagas</h1>
