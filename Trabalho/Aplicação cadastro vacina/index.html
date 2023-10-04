@@ -8,27 +8,38 @@
 </head>
 <body>
     <h1>Aplicação de Cadastro de Vacinas</h1>
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Form para cadastrar os pacientes -->
         <form id="cad-paciente">
             <h2>Cadastro do paciente</h2>
+            <!-- Preenchimento das informações do paciente -->
             <label>Nome do paciente:</label>
-            <input type="text" id="name" placeholder="Ex: João">
+            <input type="text" id="name" placeholder="Ex: João" required>
             <label>CPF:</label>
-            <input type="number" id="cpf" placeholder="Ex: 000000-00">
+            <input type="number" id="cpf" placeholder="Ex: 000000-00" required>
             <label>Data de nascimento:</label>
-            <input type="date" id="data-nasc">
-            <label>Selecione o tipo da vacina:</label>
-            <input type="" id="Tipo da vacina">
+            <input type="text" id="data-nasc" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" required>
+            <label>Tipo de vacina:</label>
+            <select id="vacinas" required>
+                <option value="" disabled selected></option>
+                <option value="CoronaVac">CoronaVac</option>
+                <option value="Butantan">Butantan </option>
+                <option value="Pfizer">Pfizer </option>
+                <option value="Janssen">Janssen</option>
+            </select>
             <label>Data de Vacinação:</label>
-            <input type="date" id="data-vacina">
+            <input type="text" id="data-vacina" placeholder="MM/DD/YYYY" onfocus="(this.type='date')" required>
+            <!-- Botões para enviar e limpar o formulário -->
             <div class="buttons">
                 <button type="submit">Enviar</button>
                 <button type="reset">Cancelar</button>
             </div>
         </form>
+        <!-- Form para listar as informações dos pacientes -->
         <form id="inf-pacientes">
             <h2>Informações do paciente</h2>
-
+            <ul id="listar-paciente"></ul>
         </form>
     </main>
     <script src="script.js"></script>

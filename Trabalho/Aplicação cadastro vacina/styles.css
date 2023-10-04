@@ -15,14 +15,14 @@ body {
 
 main {
     width: 85%;
-    height: 100vh;
+    height: auto;
     display: flex;
     margin: 0 auto;
 }
 
 h1 {
     text-align: center;
-    padding: 50px 0;
+    padding: 35px 0;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -64,6 +64,16 @@ input {
     border: 1px solid #000;
 }
 
+select {
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    border: 1px solid #000;
+    transition: 0.5s ease-in-out;
+}
+
 .buttons {
     width: 100%;
     height: 65px;
@@ -75,7 +85,7 @@ input {
 
 button {
     width: 120px;
-    height: 35px;
+    height: 40px;
     border-radius: 5px;
     letter-spacing: 1px;
     font-family: 'Bebas Neue', sans-serif;
@@ -85,4 +95,28 @@ button {
 button:nth-of-type(2) {
     background-color: rgb(235, 15, 15);
     color: #fff;
+}
+
+ul {
+    width: 80%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+    color: #000000;
+    white-space: break-spaces;
+}
+
+#inf-pacientes {
+    overflow-y: scroll;
+}
+
+#inf-pacientes::-webkit-scrollbar {
+    width: 5px;
+}
+
+#inf-pacientes::-webkit-scrollbar-thumb {
+    background: #333;
 }
