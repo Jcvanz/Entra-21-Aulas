@@ -9,20 +9,27 @@
     border: none;
 }
 
+input:focus, select:focus {
+    border: 2px solid #0080ff;
+    outline: 0;
+}
+
 body {
     background-color: #d3d0d0;
+    max-width: 1450px;
 }
 
 main {
-    width: 85%;
+    width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 h1 {
     text-align: center;
-    padding: 35px 0;
+    margin: 20px auto ;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -30,13 +37,12 @@ form {
     width: 500px;
     height: 570px;
     background-color: rgb(124, 110, 90);
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 5px;
     border: 1px solid #000;
     filter: drop-shadow(1px 1px 5px);
 }
@@ -87,9 +93,11 @@ button {
     width: 120px;
     height: 40px;
     border-radius: 5px;
-    letter-spacing: 1px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: sans-serif;
     border: 1px solid #000;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 button:nth-of-type(2) {
@@ -107,6 +115,7 @@ li {
     list-style: none;
     color: #000000;
     white-space: break-spaces;
+    font-size: 17px;
 }
 
 #inf-pacientes {
@@ -119,4 +128,10 @@ li {
 
 #inf-pacientes::-webkit-scrollbar-thumb {
     background: #333;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 350px;
+    }
 }
